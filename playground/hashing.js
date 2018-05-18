@@ -6,8 +6,9 @@ var id = {
 };
 
 var token = jwt.sign(id, "123qwerty");
+console.log(token);
 var decoded = jwt.verify(token, "123qwerty");
-
+console.log(decoded);
 // var message = "Rish";
 // var hash = SHA256(message).toString();
 //
